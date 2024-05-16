@@ -1,0 +1,46 @@
+extends layout
+
+block content
+    .w3-card-4
+        header.w3-container.w3-teal
+            h1 Contrato #{contrato._id}
+
+        .w3-container
+            ul.w3-ul.w3-card-4(style="width:50%")
+                li
+                    b dataCelebracaoContrato:
+                    span #{ contrato.dataCelebracaoContrato}
+                li
+                    b dataPublicacao:
+                    span #{contrato.dataPublicacao}
+                li
+                    b entidade_comunicante:
+                    span #{contrato.entidade_comunicante}
+                li
+                    b fundamentacao:
+                    span #{contrato.fundamentacao}
+                li
+                    b nAnuncio:
+                    span #{contrato.nAnuncio}
+                li
+                    b NIPC_entidade_comunicante:
+                    span #{contrato.NIPC_entidade_comunicante}
+                li
+                    b objectoContrato:
+                    span #{contrato.objectoContrato}
+                li
+                    b prazoExecucao:
+                    span #{contrato.prazoExecucao}
+
+                li
+                    b precoContratual:
+                    span #{contrato.precoContratual}
+                li
+                    b tipoprocedimento:
+                    span #{contrato.tipoprocedimento}
+
+        footer.w3-container.w3-teal
+            address
+                span Gerado por Peixoto em #{Data} - [
+                    a(href="/") Voltar
+                    span ]

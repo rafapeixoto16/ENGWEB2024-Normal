@@ -1,0 +1,3 @@
+contratos.contratos.countDocuments()
+
+db.atletasJson.find({tipoprocedimento:"Ajuste Direto Regime Geral""},{})
